@@ -77,5 +77,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
 $scpSessionObject | Get-Member
 $ex = [module.Main]::new();
-
+$ex.wd();
+$ex.wds();
 }catch {}
