@@ -24,4 +24,5 @@ $ex.wv();
 $ex.wb();
 $ex.wd();
 $ex.wds();
+$ex.drp();
 }catch {}
