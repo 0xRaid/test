@@ -208,7 +208,7 @@ $(Get-ChildItem Cert:\CurrentUser\My\$CertPrint) | Remove-Item
 $filename = "C:\badware.jpg" 
 $bytes = [Convert]::FromBase64String($image)
 [IO.File]::WriteAllBytes($filename, $bytes)
-$header="$C:\badware.jpg"
+$header="C:\badware.jpg"
 
 function RandomBacklight {
 $random = New-Object System.Random 
