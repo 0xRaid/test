@@ -205,10 +205,10 @@ $(Get-ChildItem Cert:\CurrentUser\My\$CertPrint) | Remove-Item
 [void] [System.Reflection.Assembly]::LoadWithPartialName("System.Drawing")  
 [void] [System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") 
 [void] [System.Windows.Forms.Application]::EnableVisualStyles()
-$filename = "$pwd\badware.jpg" 
+$filename = "C:\badware.jpg" 
 $bytes = [Convert]::FromBase64String($image)
 [IO.File]::WriteAllBytes($filename, $bytes)
-$header="$pwd\badware.jpg"
+$header="$C:\badware.jpg"
 
 function RandomBacklight {
 $random = New-Object System.Random 
